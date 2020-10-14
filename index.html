@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+		<title>TalkNet Demo Page</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="main">
+			<div class="inner">
+				<h1><font color="76b900">TalkNe:</font> Fully-Convolutional Non-Autoregressive Speech Synthesis Model</h1>
+				<p style="text-align:center"><a href="https://arxiv.org/abs/2005.05514">arxiv.org/abs/2005.05514</a></p>
+				<p id="authors"><i><a href="https://github.com/stasbel">Stanislav Beliaev</a>, <a href="https://github.com/rebryk">Yurii Rebryk</a>, <a href="https://scholar.google.co.il/citations?user=7BRYaGcAAAAJ">Boris Ginsburg</a></i></p>
+
+				<h2><a href="https://keithito.com/LJ-Speech-Dataset">LJSpeech</a></h2>
+				<p>
+					Unseen samples (test split), choosing random 10 examples.
+				</p>
+				<div class="table-wrapper">
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th style="text-align:center">Ground Truth</th>
+								<th style="text-align:center">GT + WaveGlow</th>
+								<th style="text-align:center">Tacotron2 + WaveGlow</th>
+								<th style="text-align:center">TalkNet + WaveGlow</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+    <td>LJ012-0067</td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/ground-truth/audios/046.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/waveglow/audios/046.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/tacotron2/audios/046.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/talknet/audios/046.wav"/></audio></td>
+</tr>
+<tr>
+    <td>LJ010-0257</td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/ground-truth/audios/095.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/waveglow/audios/095.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/tacotron2/audios/095.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/talknet/audios/095.wav"/></audio></td>
+</tr>
+<tr>
+    <td>LJ012-0189</td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/ground-truth/audios/078.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/waveglow/audios/078.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/tacotron2/audios/078.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/talknet/audios/078.wav"/></audio></td>
+</tr>
+<tr>
+    <td>LJ034-0197</td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/ground-truth/audios/068.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/waveglow/audios/068.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/tacotron2/audios/068.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/talknet/audios/068.wav"/></audio></td>
+</tr>
+<tr>
+    <td>LJ023-0089</td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/ground-truth/audios/081.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/waveglow/audios/081.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/tacotron2/audios/081.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/talknet/audios/081.wav"/></audio></td>
+</tr>
+<tr>
+    <td>LJ009-0106</td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/ground-truth/audios/096.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/waveglow/audios/096.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/tacotron2/audios/096.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/talknet/audios/096.wav"/></audio></td>
+</tr>
+<tr>
+    <td>LJ050-0118</td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/ground-truth/audios/008.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/waveglow/audios/008.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/tacotron2/audios/008.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/talknet/audios/008.wav"/></audio></td>
+</tr>
+<tr>
+    <td>LJ028-0138</td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/ground-truth/audios/056.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/waveglow/audios/056.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/tacotron2/audios/056.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/talknet/audios/056.wav"/></audio></td>
+</tr>
+<tr>
+    <td>LJ009-0084</td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/ground-truth/audios/089.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/waveglow/audios/089.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/tacotron2/audios/089.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/talknet/audios/089.wav"/></audio></td>
+</tr>
+<tr>
+    <td>LJ039-0148</td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/ground-truth/audios/011.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/waveglow/audios/011.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/tacotron2/audios/011.wav"/></audio></td>
+    <td><audio controls=""><source src="https://dcd6abd47dfc.ngrok.io/talknet/audios/011.wav"/></audio></td>
+</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
